@@ -57,6 +57,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define PC15_Pin GPIO_PIN_15
+#define PC15_GPIO_Port GPIOC
+#define PD13_Pin GPIO_PIN_13
+#define PD13_GPIO_Port GPIOD
+#define PD14_Pin GPIO_PIN_14
+#define PD14_GPIO_Port GPIOD
+#define PD15_Pin GPIO_PIN_15
+#define PD15_GPIO_Port GPIOD
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
