@@ -22,6 +22,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "button.h"
+#include "garland.h"
 
 /* USER CODE END Includes */
 
@@ -85,6 +87,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
+  garland_init();
 
   /* USER CODE END 2 */
 
@@ -95,6 +98,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    button_poll();
+    if (button_clicked()) {
+      garland_next();
+    }
+    garland_poll();
   }
   /* USER CODE END 3 */
 }
